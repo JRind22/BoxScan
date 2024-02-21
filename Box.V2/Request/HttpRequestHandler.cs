@@ -293,7 +293,7 @@ namespace Box.V2.Request
                     Debug.WriteLine("Could not set TLSv1.2 security protocol!");
                 }
 #elif NET462
-                System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls11 | System.Net.SecurityProtocolType.Tls12;
+                System.Net.ServicePointManager.SecurityProtocol |= System.Net.SecurityProtocolType.Tls12 | System.Net.SecurityProtocolType.Tls13;
 #else
                 FAIL THE BUILD
 #endif
